@@ -1,0 +1,120 @@
+# Flutter Version use 3.27.3
+name: Wow
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.2
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get:
+  get_storage:
+  fluttertoast:
+  intl:
+  connectivity_plus:
+  url_launcher:
+  lottie:
+  chewie:
+  cached_network_image:
+  video_player:
+  shimmer:
+  country_picker:
+  dotted_border:
+ # permission_handler:
+  path_provider:
+  socket_io_client:
+  camera:
+  flutter_spinkit:
+  firebase_auth: ^5.6.0
+  firebase_core: ^3.14.0
+  cloud_firestore:
+  firebase_crashlytics: ^4.3.7
+  firebase_messaging: ^15.2.7
+  google_sign_in: ^5.4.4
+  preload_page_view:
+  get_thumbnail_video:
+  image_picker:
+  audioplayers: ^6.5.0
+  deepar_flutter_plus: ^0.2.0
+  zego_express_engine: ^3.21.0
+  encrypt:
+  native_device_orientation:
+  flutter_svg:
+  record:
+  webview_flutter:
+  flutter_local_notifications:
+  razorpay_flutter:
+  flutter_stripe: ^11.5.0
+  in_app_purchase:
+  dio:
+  qr_flutter:
+  permission_handler: ^11.3.1
+  mobile_scanner: ^7.0.1
+  # ✅ Latest with Flutter v2+ embedding only
+#  mobile_scanner: ^6.0.3      # ✅ Stable release that avoids Kotlin/data bugs
+  date_picker_plus:
+  http:
+  svgaplayer_flutter:
+  in_app_purchase_android:
+  in_app_purchase_storekit:
+  vibration:
+  screenshot:
+  gallery_saver_plus:
+  flutter_launcher_icons:
+  share_plus:
+  flutter_branch_sdk:
+  readmore:
+  device_info_plus:
+  blurrycontainer:
+  intl_phone_field:
+  flutter_otp_text_field:
+  loading_animation_widget:
+  sign_in_with_apple:
+  change_app_package_name:
+
+  curved_labeled_gradient_navigation_bar: ^2.0.13
+
+dependency_overrides:
+  path:
+  http:
+  cupertino_icons:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_logo.png"
+  min_sdk_android: 21
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+    - assets/lottie/
+    - assets/effects/
+
+  fonts:
+    - family: SfProRegular
+      fonts:
+        - asset: assets/fonts/Sf-Pro-Regular.OTF
+
+    - family: SfProMedium
+      fonts:
+        - asset: assets/fonts/Sf-Pro-Medium.OTF
+
+    - family: SfProBold
+      fonts:
+        - asset: assets/fonts/Sf-Pro-Bold.OTF

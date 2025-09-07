@@ -1,0 +1,111 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "com.google.gms.google-services"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader -> localProperties.load(reader) }
+}
+def flutterVersionCode = (localProperties.getProperty('flutter.versionCode') ?: '1').toInteger()
+def flutterVersionName = (localProperties.getProperty('flutter.versionName') ?: '1.0')
+
+android {
+    namespace "com.app.nexnex"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.app.nexnex"
+        minSdk 23
+        targetSdk 35
+        versionCode flutterVersionCode
+        versionName flutterVersionName
+        multiDexEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("upload.jks")
+            storePassword "82103Khani"
+            keyAlias "upload"
+            keyPassword "82103Khani"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+        }
+        release {
+            signingConfig signingConfigs.release // ✅ use debug key for release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'arm64-v8a'
+            universalApk true // ✅ Generates standard app-debug.apk
+        }
+    }
+}
+
+configurations.all {
+    exclude group: "com.google.mlkit", module: "barcode-scanning"
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.8.1')
+
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.5'
+
+    implementation 'io.card:android-sdk:5.5.1'
+    implementation 'com.stripe:stripe-wechatpay:20.16.0'
+
+    implementation "com.google.mlkit:barcode-scanning:17.2.0"
+    implementation "com.google.mlkit:barcode-scanning-common:17.0.0"
+    implementation "com.google.mlkit:vision-common:17.3.0"
+
+    // Stripe Push Provisioning
+    implementation "com.stripe:stripe-android:20.39.0" // Use same version as your React Native Stripe SDK
+    implementation 'com.facebook.android:facebook-login:16.3.0'
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Wow</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Wow</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.mtai.wowwow</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.62445718384-8djj0eqqvfbhf01bjj57c0to9usrkv06</string>
+				<string>fw4rft.app.link</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>GADNativeAdValidatorEnabled</key>
+    <false/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Take a photo for display</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Take a video for display</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Read your photos for display</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>My description about why I need this capability</string>
+	<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>branch_key</key>
+	<dict>
+		<key>live</key>
+		<string>key_live_aujUQf8L63TShEgHjKEl8jcnsAi9Svo2</string>
+		<key>test</key>
+		<string>secret_live_h3CB7Bv0i3jXnAuQYAySONSI6aNinWpu</string>
+	</dict>
+	<key>branch_universal_link_domains</key>
+	<array>
+		<string>8406c.app.link</string>
+		<string>8406c-alternate.app.link</string>
+		<string>8406c.test.app.link</string>
+	</array>
+
+	<key>CLIENT_ID</key>
+	<string>41616583072-36ipbdq4dq2hbmltdirlfcttvtsromt6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.41616583072-36ipbdq4dq2hbmltdirlfcttvtsromt6</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>41616583072-nv73nk0ka2n3j5a8rs3jmqi37sqsi8lr.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCvNyb6-XX54Tbycs9YlpqrTUqD8NRkai4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>41616583072</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>app.nexnex.com</string>
+	<key>PROJECT_ID</key>
+	<string>nexnex-cfaf4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nexnex-cfaf4.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:41616583072:ios:5f3209a1bd33d56dea9cc5</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+
+</dict>
+</plist>

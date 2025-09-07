@@ -1,0 +1,2 @@
+D:/Freelnace/fel/nexnex/android/app/.cxx/RelWithDebInfo/45x5p525/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/Freelnace/fel/nexnex/android/app/.cxx/RelWithDebInfo/45x5p525/arm64-v8a/CMakeFiles/rebuild_cache.dir

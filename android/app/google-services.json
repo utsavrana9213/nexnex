@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "41616583072",
+    "project_id": "nexnex-cfaf4",
+    "storage_bucket": "nexnex-cfaf4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41616583072:android:86fb3f19833d853eea9cc5",
+        "android_client_info": {
+          "package_name": "com.app.nexnex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41616583072-hgctr9b3cpgcte1ko6sm0ad61si3lih6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.nexnex",
+            "certificate_hash": "6bbd4b05896502da2d6be76d20ebf6b98ccefd4f"
+          }
+        },
+        {
+          "client_id": "41616583072-nv73nk0ka2n3j5a8rs3jmqi37sqsi8lr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.nexnex",
+            "certificate_hash": "d0fe9ff2c7aa81e99c7da5da05dc31a22e2b0f73"
+          }
+        },
+        {
+          "client_id": "41616583072-qulajng3qfbk39j0voucd4p8g56fa9di.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.nexnex",
+            "certificate_hash": "54ee48fc435b573668075db75ca957b7c97aa514"
+          }
+        },
+        {
+          "client_id": "41616583072-j07mvrcvrgpmor9tpoos19k0l97n74el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5EcHZ-etRlyf0YFE-63-lE5uSvmbqNdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41616583072-j07mvrcvrgpmor9tpoos19k0l97n74el.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "41616583072-36ipbdq4dq2hbmltdirlfcttvtsromt6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.nexnex.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
